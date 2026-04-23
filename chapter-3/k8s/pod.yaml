@@ -1,0 +1,10 @@
+apiVersion: v1 
+kind: Pod 
+metadata: 
+  name: joker
+spec: 
+  containers: 
+  - name: hello-joker
+    image: keane7a/hello-joker:v1
+    ports: 
+    - containerPort: 8083

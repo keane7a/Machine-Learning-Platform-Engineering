@@ -1,0 +1,22 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata: 
+  name: joker-deployment
+  labels: 
+    app: fast-api 
+spec:
+  template: 
+    metadata: 
+      name: joker
+      labels: 
+        app: fast-api
+    spec: 
+      containers: 
+      - name: hello-joker
+        image: keane7a/hello-joker:v2
+        ports: 
+        - containerPort: 8083
+  replicas: 3
+  selector: 
+    matchLabels: 
+      app: fast-api
