@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/699166571264602312
+creation_time: 1777641702245
+experiment_id: '699166571264602312'
+last_update_time: 1777641702245
+lifecycle_stage: active
+name: income_classifier

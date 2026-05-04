@@ -1,0 +1,19 @@
+artifact_path: income-classifier
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+mlflow_version: 2.6.0
+model_uuid: 0527abb144e2463191ff1442647906b6
+run_id: fd44c1e908304305aba35647f157e41f
+utc_time_created: '2026-05-01 14:20:02.063246'

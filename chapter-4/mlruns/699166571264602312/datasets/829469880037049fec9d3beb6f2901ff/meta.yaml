@@ -1,0 +1,9 @@
+digest: bef33769
+name: dataset
+profile: '{"num_rows": 30162, "num_elements": 241296}'
+schema: '{"mlflow_colspec": [{"type": "string", "name": "Workclass"}, {"type": "string",
+  "name": "Education"}, {"type": "string", "name": "Marital-Status"}, {"type": "string",
+  "name": "Occupation"}, {"type": "string", "name": "Relationship"}, {"type": "string",
+  "name": "Race"}, {"type": "string", "name": "Sex"}, {"type": "string", "name": "Native_country"}]}'
+source: '{"uri": "./buckets/mlflow-datasets/income-classifier-datasets/feature_df-18069e32567c4ce9b33ab6e9c3127985.csv"}'
+source_type: local

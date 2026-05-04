@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/699166571264602312/ca510f553d4c4135a25f6766a43002f5/artifacts
+end_time: 1777641817474
+entry_point_name: ''
+experiment_id: '699166571264602312'
+lifecycle_stage: active
+run_id: ca510f553d4c4135a25f6766a43002f5
+run_name: eda-290c32bc-9ad4-4252-aa72-cc9d59fc14f5
+run_uuid: ca510f553d4c4135a25f6766a43002f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777641812717
+status: 3
+tags: []
+user_id: lenovo
