@@ -5,4 +5,4 @@ offline_store:
   type: file
 online_store: 
   type: redis
-  connection_string: "localhost:6379,password=Tko5aXpibzhNNQ=="
+  connection_string: "localhost:6379,password=NJ9izbo8M5"
