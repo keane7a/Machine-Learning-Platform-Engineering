@@ -1,0 +1,28 @@
+name: Retrieve Features From Feast
+description: Retrieves Features from Feast where the feature_store.yaml is stored in MinIO
+inputs:
+- name: file_name
+  type: String
+- name: entity_df
+  type: Dataset   # Changed from OutputPath to Dataset for KFP v2
+- name: feature_list
+  type: String
+
+outputs:
+- name: data_output
+  type: Dataset   # Changed from OutputPath to Dataset for KFP v2 
+
+implementation:
+  container:
+    image: 'keane7a/retrieve-feast-features:latest'
+    command:
+    - python3
+    - /app/src/retrieve_features/retrieve_features.py
+    - --file_name
+    - {inputValue: file_name}
+    - --entity_df
+    - {inputPath: entity_df}      # Changed to {inputPath} for KFP v2 Dataset
+    - --feature_list
+    - {inputValue: feature_list}
+    - --data_output
+    - {outputPath: data_output}   # Changed to {outputPath} for KFP v2 Dataset
